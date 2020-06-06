@@ -1,0 +1,173 @@
+/*
+
+Black       #000000
+White       #ffffff
+Red         #880000
+Cyan        #aaffee
+Purple      #cc44cc
+Green       #00cc55
+Blue        #0000aa
+Yellow      #eeee77
+Orange      #dd8855
+Brown       #664400
+Light red   #ff7777
+Dark Grey   #333333
+Grey        #777777
+Light green #aaff66
+Light blue  #0088ff
+Light grey  #bbbbbb
+
+*/
+
+
+
+html, body {
+    padding: 0; margin: 0;
+}
+
+body {
+    padding: 0; margin: 0;
+    display: grid;
+    /* grid-template: 2em auto / auto; */
+    grid-template:
+	" header    header"  fit-content(6em)
+        " workspace catalog" auto / auto 24em;
+    height: 100vh;
+}
+
+body {
+    font: 12pt monospace;
+    background-color: #bbbbbb;
+    color: #333333;
+}
+
+input {
+    font: 12pt monospace;
+    color: #dd8855;
+    background-color: #e0e0e0;
+    border: 1px solid #333333;
+}
+
+div.header {
+    grid-area: header;
+    background-color: #fafafa;
+}
+
+.header fieldset {
+    display: inline;
+    border: none;
+}
+
+.header details {
+    display: inline;
+}
+
+.header {
+}
+
+.header details > embed {
+    position: absolute;
+}
+
+div.catalog {
+    background-color: #fafafa;
+    grid-area: catalog;
+    place-self: stretch;
+    overflow: scroll;
+}
+
+div.catalogItem {
+    margin: 0.3em;
+    border: 1px solid #777777;
+}
+
+.catalogItem span {
+    display: block;
+}
+
+.catalogItem svg {
+}
+
+div.workspace {
+    grid-area: workspace;
+    place-self: stretch;
+    overflow: scroll;
+}
+
+.workspace svg {
+    background-color: #00cc55;
+}
+
+svg .selected {
+    visibility: hidden;
+}
+
+svg .selected * {
+    visibility: visible;
+    stroke: #eeee77;
+}
+
+
+.dialog {
+    display: none;
+    position: absolute;
+    min-width: 40em;
+    min-height: 20em;
+    background-color: #fafafa;
+    color: #333333;
+    opacity: 0.9;
+}
+
+.dialog h2 {
+}
+
+.dialog table {
+    width: 100%;
+}
+
+.dialog table td {
+    border: none;
+    padding: 0.1em;
+}
+
+.dialog table td input[type="text"] {
+    width: 32em;
+    background-color: inherit;
+    color: inherit;
+}
+
+.dialog table td input[type="button"] {
+    margin: 0.1em;
+}
+
+.dialog table tr.current {
+    background-color: #0088ff;
+}
+
+.dialogCloseButton {
+    border: none;
+    font-size: 24pt;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: inherit;
+}
+
+
+
+.dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    overflow: scroll;
+    max-height: 90%;
+}
+
+#BomDialog td,th  {text-align: left;}
+#BomDialog .num   {text-align: right;}
+
+#BomDialog tbody > tr:hover {
+    background-color: #0088ff;
+}

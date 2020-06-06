@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hilfe</title>
+
+    <style>
+
+      body {
+	  background-color: #bbbbbb;
+      }
+
+      main {
+	  background-color: #fafafa;
+	  color: #333333;
+	  max-width: 40em;
+	  margin: auto;
+	  font: 14pt monospace;
+	  padding: 1em;
+      }
+
+      h2, h3 {
+      }
+
+      th {
+	  text-align: left;
+	  min-width: 15em;
+      }
+      th {
+	  color: #dd8855;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+	<a href="#Einfuhrung">Einführung</a>
+	<a href="#Mausbefehle">Mausbefehle</a>
+	<a href="#Tastaturbefehle">Tastaturbefehle</a>
+      </nav>
+
+
+      <h2 id="Einfuhrung">Einführung</h2>
+
+      <h3>Einfügen und Verbinden</h3>
+
+      <p>Durch Klick in den Katalog wird ein neues Teil eingefügt. Das
+	neue Teil folgt der Maus, bis es durch einen weiteren Klick
+	abgelegt oder durch den Tastaturbefehl 's' an ein schon
+	vorhandenes Teil angefügt wird.
+      </p>
+
+      <h3>Selektieren und Verschieben</h3>
+
+      <p>Durch Klick auf ein Teil im Plan wird dieses
+	selektiert. Durch Drücken und Halten von Shift während des
+	Klickens können weitere Teile selektiert werden oder die
+	Selektion rückgängig gemacht werden.
+      </p>
+
+      <p>Mit den Tastaturbefehlen 'a' und 'A' kann eine Selektion auf
+	angrenzende Teile erweitert werden. 'A' fügt direkt angrenzende
+	Teil zur Selektion hinzu. 'a' weitet die Selektion auf all
+	verbundenen Teil aus.
+      </p>
+
+      <p>Nach Klick auf ein selektiertes Bauteil lassen sich die
+	selektierten Bauteile verschieben. Der Verschiebevorgang kann
+	auch durch die Tastaturbefehle 'm' oder 'c' gestartet
+	werden. 'm' verschiebt selektierte Teile, und behält die
+	relative Position zur Maus bei. 'c' verschiebt ebenfalls die
+	selektierten Bauteile, bringt sie aber vorher in eine
+	Position, so dass die Maus im Schwerpunkt der selektierten
+	Teilen steht.
+      </p>
+
+      <p>Ein weiterer Klick legt die verschobenen Teile an der neuen
+	Position ab. 'Esc' bricht den Verschiebevorgang ab, und bringt
+	die Teile zurück an ihren ursprünglichen Platz.
+      </p>
+
+      <h3>Kopieren und Löschen</h3>
+
+      <p>Selektierte Teil können mit 'd' kopiert und mit der Maus
+	verschoben werden. 'k' löscht selektierte Teil.
+      </p>
+
+      <h3>Abstandsmessung</h3>
+
+      <p>'g' beginnt oder beendet die Abstandsmessung. Der
+	Anfangspunkt der Messung wird mit einem roten Kreuz
+	markiert. Dann kann die Maus bewegt werden. Der horizontale und
+	vertikale Abstand sowie die Distanz des Mauszeigers vom
+	Anfangspunkt wird oben angezeigt.
+      </p>
+
+      <h2 id="Mausbefehle">Mausbefehle</h2>
+
+      <table>
+	<tr><th>Klick in den Katalog</th><td>Neues Teil einfügen und verschieben</td></tr>
+	<tr><th>Klick auf Bauteil im Plan</th><td>Einzelnes Teil selektieren</td></tr>
+	<tr><th>Shift und Klick auf Bauteil im Plan</th><td>Selektieren/Deselektieren eines (weiteren) Teils</td></tr>
+	<tr><th>Klick auf ein selektiertes Bauteil im Plan</th><td>Beginnt den Verschiebevorgang</td></tr>
+	<tr><th>Klick, wenn verschoben wird</th><td>Legt Teile an der neuen Position ab</td></tr>
+      </table>
+
+      <h2 id="Tastaturbefehle">Tastaturbefehle</h2>
+
+      <h3>Selektieren</h3>
+      <table>
+	<tr><th>a</th><td>Selektion auf die zusammenhängenden Teile erweitern</td></tr>
+	<tr><th>A</th><td>Selektion um die nächsten direkt anhängenden Teile erweitern</td></tr>
+      </table>
+
+      <h3>Verschieben</h3>
+      <table>
+	<tr><th>c</th><td>Selektierte Teile am Mauszeiger zentrieren und verschieben</td></tr>
+	<tr><th>m</th><td>Selektierte Teile verschieben</td></tr>
+	<tr><th>r</th><td>Verschobene Teile 90° gegen den Uhrzeigersinn drehen</td></tr>
+	<tr><th>R</th><td>Verschobene Teile passend zu markierten Verbindungsstellen drehen</td></tr>
+	<tr><th>s</th><td>Verschobene Teile mit den markierten Verbindungsstellen verbinden</td></tr>
+	<tr><th>Esc</th><td>Verschieben abbrechen</td></tr>
+      </table>
+
+      <h3>Kopieren</h3>
+      <table>
+	<tr><th>d</th><td>Selektierte Teile duplizieren und verschieben</td></tr>
+      </table>
+
+      <h3>Löschen</h3>
+      <table>
+	<tr><th>k</th><td>Selektierte Teile löschen</td></tr>
+      </table>
+
+      <h3>Abstandsmessung</h3>
+      <table>
+	<tr><th>g</th><td>Abstandsmessung beginnen oder beenden</td></tr>
+      </table>
+
+      <h3>Zoom</h3>
+      <table>
+	<tr><th>+</th><td>Anzeige vergößern</td></tr>
+	<tr><th>-</th><td>Anzeige verkleinern</td></tr>
+      </table>
+
+      <h3>Materialliste</h3>
+      <table>
+	<tr><th>B</th><td>Materialliste anzeigen</td></tr>
+      </table>
+
+      <h3>Hilfe</h3>
+      <table>
+	<tr><th>H</th><td>Hilfe anzeigen</td></tr>
+      </table>
+
+    </main>
+  </body>
+</html>

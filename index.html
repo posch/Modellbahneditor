@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bahn</title>
+    <link rel="stylesheet" href="default.css">
+  </head>
+  <body>
+    <div class="header">
+      <fieldset>
+	<input id="helpDialogButton" type="button" value="Hilfe" />
+      </fieldset>
+
+      <fieldset>
+        <input id="saveButton" type="button" value="Save" />
+	<input id="loadButton" type="button" value="Load" />
+	<input id="storageDialogButton" type="button" value="Speicher" />
+      </fieldset>
+
+      <fieldset>
+	Größe
+	<input name="workspace_width" type="number" style="width: 4em" min="0" max="10000" step="1" value="200">
+	x
+	<input name="workspace_height" type="number" style="width: 4em" min="0" max="10000" step="1" value="100">
+      </fieldset>
+      <fieldset>
+	Zoom
+	<input name="workspace_zoom" type="number" style="width: 4em" min="-100" max="1000" value="0">
+      </fieldset>
+
+      <fieldset>
+	<span id="ruler_distance">--</span>
+      </fieldset>
+      <fieldset>
+	<span id="current_part">--</span>
+      </fieldset>
+
+    </div>
+    <div class="workspace">
+      <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+	  <g id="connector">
+	    <line x1="0" y1="-18" x2="0" y2="18" stroke="black" stroke-width="3" />
+	  </g>
+	  <g id="snap-connector">
+	    <circle cx="0" cy="0" r="18" fill="darkred" stroke="red" stroke-width="3" />
+	  </g>
+	  <g id="selected">
+	    <circle cx="0" cy="0" r="90" fill="none" stroke="brown" stroke-width="3" />
+	  </g>
+
+	  <pattern id="smallGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+	    <path d="M 10 0 L 0 0 0 10" fill="none" stroke="gray" stroke-width="0.5"/>
+	  </pattern>
+	  <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+	    <rect width="180" height="100" fill="url(#smallGrid)"/>
+	    <path d="M 100 0 L 0 0 0 100" fill="none" stroke="gray" stroke-width="1"/>
+	  </pattern>
+
+	</defs>
+	<g class="grid">
+	  <rect width="100%" height="100%" fill="url(#grid)" />
+	</g>
+	<g class="below"></g>
+	<g class="workspace"></g>
+	<g class="above"></g>
+      </svg>
+    </div>
+    <div class="catalog"></div>
+
+
+    <div id="HelpDialog" class="dialog">
+      <h2>Hilfe</h2>
+      <input type="button" class="dialogCloseButton" value="&Cross;" />
+      <embed type="text/html" src="help.html" style="width: 60em; height: 80vh;" />
+    </div>
+
+    <div id="StorageDialog" class="dialog">
+      <h2>Speicher</h2>
+      <input type="button" class="dialogCloseButton" value="&Cross;" />
+      <table class="list">
+      </table>
+    </div>
+
+    <div id="BomDialog" class="dialog">
+      <h2>Materialliste</h2>
+      <input type="button" class="dialogCloseButton" value="&Cross;" />
+      <table>
+	<thead><tr><th class="num">Anzahl</th><th>Nummer</th><th>Beschreibung</th></tr></thead>
+	<tbody></tbody>
+      </table>
+    </div>
+
+    <script src="catalog.js"></script>
+    <script src="storage.js"></script>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="bom.js"></script>
+    <script src="help.js"></script>
+    <script src="controller.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

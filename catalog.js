@@ -27,32 +27,32 @@ function Catalog() {
 	    '<path d="M 0 0 L 90 0" fill="none" stroke="black" stroke-width="16.5" />'),
 	new CatalogItem(
 	    '5108',
-	    'Gleisstück gerade 1/4 45mm',
+	    'Gerade 1/4 45mm',
 	    [[ 0.0, 0.0, 180.0 ], [ 45.0, 0.0, 0.0 ]],
 	    '<path d="M 0 0 L 45 0" fill="none" stroke="black" stroke-width="16.5" />'),
 	new CatalogItem(
 	    '5109',
-	    'Gleisstück gerade 3/16 33,5mm',
+	    'Gerade 3/16 33,5mm',
 	    [[ 0.0, 0.0, 180.0 ], [ 33.5, 0.0, 0.0 ]],
 	    '<path d="M 0 0 L 33.5 0" fill="none" stroke="black" stroke-width="16.5" />'),
 	new CatalogItem(
 	    '5110',
-	    'Gleisstück gerade 1/8 22,5mm',
+	    'Gerade 1/8 22,5mm',
 	    [[ 0.0, 0.0, 180.0 ], [ 22.5, 0.0, 0.0 ]],
 	    '<path d="M 0 0 L 22.5 0" fill="none" stroke="black" stroke-width="16.5" />'),
 	new CatalogItem(
 	    '5129',
-	    'Gleisstück gerade 70mm',
+	    'Gerade 70mm',
 	    [[ 0.0, 0.0, 180.0 ], [ 70, 0.0, 0.0 ]],
 	    '<path d="M 0 0 L 70 0" fill="none" stroke="black" stroke-width="16.5" />'),
 	new CatalogItem(
 	    '5210',
-	    'Gleisstück gerade 16mm',
+	    'Gerade 16mm',
 	    [[ 0.0, 0.0, 180.0 ], [ 16, 0.0, 0.0 ]],
 	    '<path d="M 0 0 L 16 0" fill="none" stroke="black" stroke-width="16.5" />'),
 	new CatalogItem(
 	    '5208',
-	    'Gleisstück gerade 8mm',
+	    'Gerade 8mm',
 	    [[ 0.0, 0.0, 180.0 ], [ 8, 0.0, 0.0 ]],
 	    '<path d="M 0 0 L 8 0" fill="none" stroke="black" stroke-width="16.5" />'),
 

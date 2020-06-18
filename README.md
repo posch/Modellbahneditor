@@ -1,3 +1,3 @@
 # Modellbahneditor
 
-https://posch.github.io/Modellbahneditor/
+https://posch.github.io/Modellbahnplaner/
